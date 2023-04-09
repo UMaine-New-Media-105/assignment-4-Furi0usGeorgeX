@@ -42,7 +42,7 @@ rot = 19;
   pop();
   rot = rot + 0.003;
   
-  Question 2 asked that a combination of shapes be repeated in a grid-like pattern. I chose to do so using only one shape - a cloud - but having it scale randomly. I chose to do this on a separate canvas, as having the clouds stay still requires noLoop, which stops every other part of the pirate catcher game from working.  I chose to make two similar cloud shapes as they would lend additional realism to the pirate game, and will work to adjust the code so that they work within. Below are the variables used to set up the cloud "pattern".
+  Question 2 asked that a combination of shapes be repeated in a grid-like pattern, and Question 3 asked that the shapes be subject to a random variable. I chose to do so using only two shapes - clouds - but having it scale randomly. I chose to do this on a separate canvas, as having the clouds not glitch out requires noLoop, which stops every other part of the pirate catcher game from working. Below are the variables used to set up the cloud "pattern".
     //Cloud pattern variables
     cloudsWidth = 400;
   cloudsHeight = 100;
