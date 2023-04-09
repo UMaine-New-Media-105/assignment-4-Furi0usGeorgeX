@@ -72,3 +72,12 @@ The variables were adjusted in order to make the clouds appear more random, incr
 }
 
 This creates a field of clouds that appear randomly in relation to each other, and vary in size.
+
+Question 4 asks to display an array of sprites in order. I accomplished this by ajdusting my code from step 3 to draw an array of 2 clouds "in order", or because there are only two shapes, in a repeating pattern. I did this with a simple change to line 32, seen below.
+
+              for (let counter = 0; counter < shapesPerRow; counter++) {
+    32---- > let randomShape = shape[counter%shape.length];
+             chooseShape(randomShape, shapeX * counter, shapeY * counter);
+   }
+
+This makes it choose the shape in the order it is listed in the array. But because there are only two shapes, it simply goes back and forth between the two cloud shapes.
